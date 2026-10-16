@@ -1,0 +1,1370 @@
+{
+ "state": {
+  "version": 1,
+  "settings": {
+   "startDate": "2026-10-12",
+   "classEnd": "2026-12-10",
+   "weekdayBlocks": [
+    [
+     "19:00",
+     "21:00"
+    ],
+    [
+     "21:30",
+     "26:00"
+    ]
+   ],
+   "weekendBlocks": [
+    [
+     "08:00",
+     "26:00"
+    ]
+   ],
+   "theme": "system",
+   "reviewCapOn": false,
+   "reviewCapMin": 180,
+   "planFillPct": 85,
+   "breakOn": true,
+   "focusMin": 50,
+   "breakMin": 10,
+   "hardFirst": true,
+   "carryAll": true,
+   "lookback": 2,
+   "bufferDays": 3,
+   "finalDays": 4,
+   "maxJobsPerDay": 3,
+   "autoAvg": true,
+   "minDefaults": {
+    "review": 20,
+    "preview": 15,
+    "chapter": 90,
+    "final": 120,
+    "exam": 480
+   },
+   "studyRoot": "",
+   "inbox": ""
+  },
+  "subjects": [
+   {
+    "id": "se",
+    "short": "세생",
+    "name": "세포생물학의 이해",
+    "folder": "세포생물학의 이해",
+    "aliases": [
+     "세생",
+     "세포생물학",
+     "세포생물"
+    ],
+    "review": true,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#4f46e5",
+    "rvStarts": {},
+    "rvDurs": {
+     "2": 60,
+     "3": 60
+    }
+   },
+   {
+    "id": "mic",
+    "short": "AP미경",
+    "name": "AP 미시경제",
+    "folder": "AP Missy Economics",
+    "aliases": [
+     "AP미경",
+     "AP미시경제",
+     "미시경제",
+     "AP Micro",
+     "APMicro"
+    ],
+    "review": true,
+    "preview": false,
+    "weight": 4,
+    "hard": false,
+    "mins": {},
+    "color": "#0891b2",
+    "rvStarts": {},
+    "rvDurs": {
+     "3": 30,
+     "4": 20
+    }
+   },
+   {
+    "id": "eng",
+    "short": "AP영어",
+    "name": "AP 영어학",
+    "folder": "AP 영어학",
+    "aliases": [
+     "AP영어",
+     "AP영어학",
+     "영어학"
+    ],
+    "review": true,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#16a34a",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "chem",
+    "short": "AP화학",
+    "name": "AP 화학",
+    "folder": "AP 화학",
+    "aliases": [
+     "AP화학",
+     "화학"
+    ],
+    "review": true,
+    "preview": true,
+    "weight": 5,
+    "hard": true,
+    "mins": {},
+    "color": "#d97706",
+    "rvStarts": {},
+    "rvDurs": {
+     "1": 60,
+     "2": 40,
+     "5": 60
+    }
+   },
+   {
+    "id": "calc",
+    "short": "AP미적",
+    "name": "AP 미적분학 II",
+    "folder": "AP 미적분학 II",
+    "aliases": [
+     "AP미적",
+     "AP미적분",
+     "미적분"
+    ],
+    "review": true,
+    "preview": false,
+    "weight": 4,
+    "hard": true,
+    "mins": {},
+    "color": "#dc2626",
+    "rvStarts": {},
+    "rvDurs": {
+     "4": 30
+    }
+   },
+   {
+    "id": "self",
+    "short": "성자이",
+    "name": "성격과 자기 이해",
+    "folder": "성격과 자기 이해",
+    "aliases": [
+     "성자이",
+     "성격과자기이해"
+    ],
+    "review": true,
+    "preview": false,
+    "weight": 2,
+    "hard": false,
+    "mins": {},
+    "color": "#9333ea",
+    "rvStarts": {},
+    "rvDurs": {
+     "1": 30,
+     "4": 30
+    }
+   },
+   {
+    "id": "stat",
+    "short": "AP통계",
+    "name": "AP 통계학",
+    "folder": "AP 통계학",
+    "aliases": [
+     "AP통계",
+     "AP통계학",
+     "통계학"
+    ],
+    "review": true,
+    "preview": false,
+    "weight": 4,
+    "hard": false,
+    "mins": {},
+    "color": "#db2777",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "career",
+    "short": "진직",
+    "name": "진직",
+    "folder": "",
+    "aliases": [
+     "진직"
+    ],
+    "review": false,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#0d9488",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "fp",
+    "short": "융프",
+    "name": "융합프로젝트",
+    "folder": "",
+    "aliases": [
+     "융프",
+     "융합프로젝트"
+    ],
+    "review": false,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#65a30d",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "pe",
+    "short": "체육",
+    "name": "체육",
+    "folder": "",
+    "aliases": [
+     "체육"
+    ],
+    "review": false,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#475569",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "rafi",
+    "short": "라피네",
+    "name": "라피네",
+    "folder": "",
+    "aliases": [
+     "라피네"
+    ],
+    "review": false,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#ea580c",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "psy",
+    "short": "프시케",
+    "name": "프시케",
+    "folder": "",
+    "aliases": [
+     "프시케"
+    ],
+    "review": false,
+    "preview": false,
+    "weight": 3,
+    "hard": false,
+    "mins": {},
+    "color": "#2563eb",
+    "rvStarts": {},
+    "rvDurs": {}
+   },
+   {
+    "id": "sat",
+    "short": "SAT",
+    "name": "SAT",
+    "folder": "SAT",
+    "aliases": [
+     "SAT",
+     "새트"
+    ],
+    "review": false,
+    "preview": false,
+    "weight": 4,
+    "hard": false,
+    "mins": {},
+    "color": "#4f46e5",
+    "rvStarts": {},
+    "rvDurs": {}
+   }
+  ],
+  "timetable": [
+   [
+    "",
+    "calc",
+    "calc",
+    "mic",
+    "fp",
+    "stat",
+    "self",
+    "chem"
+   ],
+   [
+    "se",
+    "se",
+    "career",
+    "",
+    "chem",
+    "stat",
+    "stat",
+    "self"
+   ],
+   [
+    "mic",
+    "self",
+    "se",
+    "se",
+    "eng",
+    "eng",
+    "rafi",
+    "rafi"
+   ],
+   [
+    "eng",
+    "calc",
+    "",
+    "self",
+    "mic",
+    "mic",
+    "psy",
+    "psy"
+   ],
+   [
+    "chem",
+    "chem",
+    "fp",
+    "fp",
+    "pe",
+    "pe",
+    "eng",
+    "stat"
+   ]
+  ],
+  "dayOverrides": {
+   "2026-12-18": {
+    "off": true,
+    "note": "귀가 (13:30)"
+   }
+  },
+  "fixed": [
+   {
+    "id": "f_mirror",
+    "title": "MIRROR 정기회의",
+    "dow": 0,
+    "start": "",
+    "end": ""
+   }
+  ],
+  "milestones": [
+   {
+    "id": "m1",
+    "date": "2026-12-11",
+    "end": "2026-12-18",
+    "title": "1,2학년 기말고사",
+    "kind": "exam"
+   },
+   {
+    "id": "m5",
+    "date": "2026-12-28",
+    "title": "포스터 및 최종보고서 마감",
+    "kind": "deadline"
+   }
+  ],
+  "exams": [
+   {
+    "id": "e_sat",
+    "sid": "sat",
+    "label": "준비",
+    "date": "2026-11-07",
+    "confirmed": true,
+    "scope": [],
+    "budgetMin": 0,
+    "finalMin": 0,
+    "partial": 0,
+    "finalSpent": 0,
+    "finalDone": false
+   }
+  ],
+  "tasks": [],
+  "lessons": {
+   "2026-10-13|chem": {
+    "importedAt": 1791901598814,
+    "note": {
+     "summary": [
+      "지난 시간 복습: 반응속도(초기 속도)는 시간에 따른 반응물 농도 변화로 나타내고 rate law 형태로도 쓸 수 있음. 이어서 기체가 포함된 반응에서는 농도 대신 압력을 쓸 수 있는 이유를 정리함(PV=nRT → P=[gas]RT, R·T가 상수라 P는 농도에 비례).",
+      "계수가 1이 아닌 반응(2A→B, 3A→2B 등)은 물질별 변화율에 \"계수분의 1\"을 곱해야 하나의 rate로 같아짐. 일반식 aA+bB→cC+dD에서 rate = -(1/a)Δ[A]/Δt = -(1/b)Δ[B]/Δt = (1/c)Δ[C]/Δt = (1/d)Δ[D]/Δt.",
+      "연습: 4NO2 + O2 → 2N2O5에서 O2 기준 rate 0.024 mol/s이면 N2O5는 0.048, NO2는 0.096 (계수 비에 따라 2배, 4배).",
+      "새 개념 rate law: rate = k[A]^x[B]^y. x, y는 반응식 계수가 아니라 실험 데이터로만 결정됨. F2 + 2ClO2 → 2FClO2 예시에서 실험 3개를 비교해 x=y=1(전체 2차), k=1.2를 구함.",
+      "마지막 문제(중간고사 전 마지막 페이지): NO, H2 실험 데이터로 (a) rate law, (b) k, (c) 새 농도에서의 rate를 구함. 선생님이 이 유형은 AP에서 무조건 3문제는 기출로 나오고, 2년 전 중간고사에도 거의 같은 형식이 나왔다고 강조함. 이후 자습."
+     ],
+     "concepts": [
+      "이상기체 방정식(ideal gas equation) [확인필요]: PV=nRT를 정리하면 P=(n/V)RT=[gas]RT이고, n/V는 기체의 몰농도(mol/L)이므로 [gas]=P/RT",
+      "기체의 압력-농도 관계: R, T가 상수이므로 압력은 농도에 비례함. 반응물·생성물이 기체면 농도 대신 압력으로 속도를 써도 되고, 기체는 압력 계산이 더 쉬움",
+      "마노미터(manometer) [확인필요]: 반응물이나 생성물이 기체일 때 압력으로 반응 진행을 추적하는 도구 (녹취 표기는 \"monometer\")",
+      "계수 보정: 2A→B에서는 A가 B보다 2배 빨리 사라지므로 rate = -½Δ[A]/Δt = Δ[B]/Δt처럼 계수분의 1을 붙여야 등식이 성립함",
+      "일반화된 반응식의 rate: aA+bB→cC+dD에서 반응물에는 -, 생성물에는 +를 붙이고 각각 1/계수를 곱한 값이 모두 같음",
+      "속도식(rate law) [확인필요] (녹취 표기는 \"rate row\"): rate = k[A]^x[B]^y. 마이너스·델타가 붙은 긴 식과 같은 rate를 더 간편하게 쓴 일반식이며, 반응물이 더 있으면 [E]^z처럼 계속 붙일 수 있음",
+      "속도상수(rate constant) k: 속도식의 비례상수. k = rate / ([A]^x[B]^y)이고 같은 반응에서는 어느 실험 데이터로 계산해도 일정함 (F2 + 2ClO2 예시에서는 1.2, 단위 1/(M·s))",
+      "반응 차수(order): 속도식의 지수 x, y. F2 1차, ClO2 1차이고 합하면 전체 2차",
+      "차수 결정법: 한 물질의 농도만 바꾼 실험 쌍을 비교함. 농도 4배에 rate 4배면 1승, 농도 2배에 rate 4배면 2승, 농도 2배에 rate 2배면 1승",
+      "계수와 차수의 무관성: 반응식 계수는 지수를 결정하지 않음. 예) ClO2의 계수는 2지만 속도식에서는 1승",
+      "전형적인 AP 키네틱스(kinetics) [확인필요] 문제 유형: 속도식이 없는 상태에서 실험 데이터로 rate law를 구하고, k를 계산한 뒤, 새 농도에서 rate를 구함"
+     ],
+     "items": [
+      {
+       "text": "일반식 aA+bB→cC+dD의 rate 식(계수분의 1, 반응물 -, 생성물 +)을 노트에 직접 써보고, 2A→B와 3A→2B에 적용해보기",
+       "tag": "개념",
+       "min": 5
+      },
+      {
+       "text": "PV=nRT에서 P=[gas]RT, [gas]=P/RT까지 유도를 직접 따라 쓰고, 기체에서 농도 대신 압력을 써도 되는 이유(R·T 일정 → 비례)를 말로 설명해보기",
+       "tag": "이해",
+       "min": 10
+      },
+      {
+       "text": "4NO2 + O2 → 2N2O5 문제를 다시 풀어 N2O5 0.048, NO2 0.096이 나오는 과정(rate 식 → 계수 배수)을 확인하기",
+       "tag": "문제",
+       "min": 10
+      },
+      {
+       "text": "속도식 rate = k[A]^x[B]^y에서 x, y가 반응식 계수가 아니라 실험으로만 정해지는 이유를, F2 + 2ClO2 예시(계수 2인데 ClO2는 1승)로 설명해보기",
+       "tag": "이해",
+       "min": 10
+      },
+      {
+       "text": "F2 + 2ClO2 → 2FClO2의 실험 3개(실험 1 → 2는 ClO2 4배에 rate 4배, 실험 1 → 3은 F2 2배에 rate 2배)로 x, y를 구하고 k=1.2를 직접 계산해보기",
+       "tag": "문제",
+       "min": 15
+      },
+      {
+       "text": "NO, H2 문제 (a)(b)(c)를 다시 풀기. 한 물질만 변한 실험 쌍(1·2번, 2·3번)을 골라 비교 → 속도식 → k → 새 농도의 rate 순서로 진행하기",
+       "tag": "문제",
+       "min": 20
+      },
+      {
+       "text": "선생님이 \"무조건 3문제는 기출\"이라고 한 유형이므로, 교재에서 비슷한 실험 데이터형 문제(녹취상 \"NFL 13.3\", 예제 13.3으로 추정 [확인필요])를 찾아 추가로 풀어보기",
+       "tag": "심화",
+       "min": 20
+      }
+     ],
+     "questions": [
+      "x, y는 반응식 계수로 정하는 것이 아니라 실험 데이터로만 정한다는 점을 여러 번 강조함. F2 + 2ClO2 예시에서 계수 2가 지수에 영향이 없다는 것을 반복해서 설명함.",
+      "계수가 1이 아닌 반응에서 \"계수분의 1\"을 붙이는 이유: 3A→2B 부분의 설명이 녹취에서 모호하고 뒤섞여 있음 [확인필요]. 일반식 기준으로는 각 물질 앞에 1/계수를 붙이는 것으로 정리됨.",
+      "실험 비교는 한 물질만 변한 쌍을 골라야 함. NO, H2 문제에서 1번과 3번은 두 농도가 모두 달라져 해석이 복잡하므로 비교하지 말라고 함.",
+      "NO, H2 문제 k값의 지수 부호: 녹취에는 \"2.5 × 10^-2\"로 되어 있으나, 불러준 값(5×10^-5 ÷ (10^-2)^2 × 2×10^-3)으로 계산하면 2.5 × 10^2가 됨. 음성 인식 오류인지 선생님의 말실수인지 확인 필요 [확인필요]. 단위도 녹취에 없음.",
+      "NO, H2 문제 (c)의 새 농도 값과 최종 답은 녹취에서 뚜렷하지 않음 (계산이 \"180\", \"1.8 × 10^\" 정도로만 들림) [확인필요].",
+      "선생님이 \"이거 그냥 1.25라고 생각하시는 게 더 낫습니다. 그래야 안 헷갈립니다\"라고 했으나, 어느 값을 가리키는지 녹취로는 알 수 없음 [확인필요].",
+      "4NO2 + O2 → 2N2O5 문제에서 문제 속 \"0.024 mol/s\"가 O2 기준이라고 해석했지만, 녹취상 문제 설명이 불분명함. 질문 대상 물질도 \"N2O4\"로 인식되었으나 N2O5로 보임 [확인필요]."
+     ],
+     "preview": [
+      {
+       "text": "선생님이 다음 시간에 대해 \"(단속?)을 할 테니까 (오버?)하고 싶은 것을 들고 오시면 된다\"고 했으나 녹취가 불명확하므로, 정확히 무엇을 준비해야 하는지 확인하기 [확인필요]",
+       "tag": "",
+       "min": 5
+      }
+     ],
+     "priority": ""
+    }
+   }
+  },
+  "progress": {
+   "rt|2026-10-12|pzdvbci": {
+    "skipped": true
+   },
+   "rev|2026-10-12|chem": {
+    "skipped": true
+   },
+   "pre|2026-10-13|chem": {
+    "skipped": true
+   },
+   "rt|2026-10-12|zc8v6th": {
+    "skipped": true
+   },
+   "rev|2026-10-12|self": {
+    "skipped": true
+   },
+   "rev|2026-10-12|stat": {
+    "skipped": true
+   },
+   "rev|2026-10-13|se": {
+    "skipped": true
+   },
+   "rev|2026-10-12|calc": {
+    "skipped": true
+   },
+   "rev|2026-10-12|mic": {
+    "skipped": true
+   },
+   "rev|2026-10-13|self": {
+    "skipped": true
+   },
+   "rev|2026-10-13|stat": {
+    "skipped": true
+   },
+   "rt|2026-10-14|zc8v6th": {
+    "skipped": true
+   },
+   "rev|2026-10-14|se": {
+    "skipped": true
+   },
+   "rev|2026-10-15|mic": {
+    "skipped": true
+   },
+   "rt|2026-10-15|pzdvbci": {
+    "skipped": true
+   },
+   "rev|2026-10-14|mic": {
+    "skipped": true
+   },
+   "rev|2026-10-15|self": {
+    "skipped": true
+   }
+  },
+  "checks": {},
+  "acc": {
+   "st|2026-10-12|chem": 0.025883333333333335,
+   "st|2026-10-14|self": 40
+  },
+  "work": [],
+  "log": [],
+  "timer": null,
+  "manual": {
+   "2026-10-16": {
+    "st|2026-10-16|chem": {
+     "start": 1140,
+     "skip": true
+    },
+    "st|2026-10-16|stat": {
+     "start": 1220,
+     "skip": true
+    },
+    "st|2026-10-16|eng": {
+     "start": 1240,
+     "skip": true
+    },
+    "rb|2026-10-16|zc8v6th": {
+     "skip": true
+    },
+    "st|2026-10-16|self": {
+     "skip": true
+    },
+    "st|2026-10-16|calc": {
+     "skip": true
+    }
+   },
+   "2026-10-17": {
+    "st|2026-10-17|chem": {
+     "start": 960,
+     "dur": 60
+    },
+    "st|2026-10-17|sat": {
+     "start": 720
+    }
+   },
+   "2026-10-18": {
+    "st|2026-10-18|chem": {
+     "start": 780,
+     "dur": 60
+    }
+   }
+  },
+  "custom": [
+   {
+    "id": "2paete1",
+    "date": "2026-10-13",
+    "title": "심재민 이수아 KSEF 회의",
+    "kind": "event",
+    "start": 1140,
+    "dur": 50,
+    "done": false
+   },
+   {
+    "id": "ggcradd",
+    "date": "2026-10-17",
+    "title": "RF 앨범 회의",
+    "kind": "todo",
+    "start": 900,
+    "dur": 60,
+    "done": false
+   },
+   {
+    "id": "qpbqked",
+    "date": "2026-10-17",
+    "title": "세포생물학 SEM 프로토콜 수행평가",
+    "kind": "todo",
+    "start": 1020,
+    "dur": 30,
+    "done": false,
+    "ref": "imp:imv60og38x53"
+   },
+   {
+    "id": "vt3vcl9",
+    "date": "2026-10-17",
+    "title": "세포생물학 세특 알파폴드: AI 신약개발 혁신",
+    "kind": "todo",
+    "start": 1050,
+    "dur": 30,
+    "done": false,
+    "ref": "imp:imv60otwus1b"
+   },
+   {
+    "id": "1z9id9f",
+    "date": "2026-10-17",
+    "title": "세포생물학 세특 단백질의 일생",
+    "kind": "todo",
+    "start": 1080,
+    "dur": 30,
+    "done": false,
+    "ref": "imp:imv60pfv4mg9"
+   },
+   {
+    "id": "hmv700i",
+    "date": "2026-10-17",
+    "title": "세포생물학 모델 생물체와 그 연구",
+    "kind": "todo",
+    "start": 1110,
+    "dur": 60,
+    "done": false,
+    "ref": "imp:imv7e3d2xcep"
+   },
+   {
+    "id": "fy9nzbp",
+    "date": "2026-10-17",
+    "title": "Conrad Competition 만남 1",
+    "kind": "todo",
+    "start": 1170,
+    "dur": 90,
+    "done": false
+   },
+   {
+    "id": "z1vce05",
+    "date": "2026-10-17",
+    "title": "배~그",
+    "kind": "todo",
+    "start": 480,
+    "dur": 240,
+    "done": false
+   },
+   {
+    "id": "jxwlvi8",
+    "date": "2026-10-14",
+    "title": "벤틀리 상자깡",
+    "kind": "todo",
+    "start": 1050,
+    "dur": 90,
+    "done": false
+   },
+   {
+    "id": "f197xmm",
+    "date": "2026-10-18",
+    "title": "성격심리학 발표 수행평가",
+    "kind": "todo",
+    "start": 900,
+    "dur": 30,
+    "done": false,
+    "ref": "imp:imv6dsab3qze"
+   },
+   {
+    "id": "324v86z",
+    "date": "2026-10-16",
+    "title": "Set B 1",
+    "kind": "todo",
+    "start": 1140,
+    "dur": 60,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "1"
+    }
+   },
+   {
+    "id": "22idlm6",
+    "date": "2026-10-16",
+    "title": "Set B 2",
+    "kind": "todo",
+    "start": 1200,
+    "dur": 60,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "2"
+    }
+   },
+   {
+    "id": "wakokvi",
+    "date": "2026-10-17",
+    "title": "Set B 3",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "3"
+    }
+   },
+   {
+    "id": "a6m9vth",
+    "date": "2026-10-17",
+    "title": "Set B 4",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "4"
+    }
+   },
+   {
+    "id": "fypur4h",
+    "date": "2026-10-17",
+    "title": "Set B 5",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "5"
+    }
+   },
+   {
+    "id": "1md2lmg",
+    "date": "2026-10-18",
+    "title": "Set B 6",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "6"
+    }
+   },
+   {
+    "id": "ev0wvqp",
+    "date": "2026-10-18",
+    "title": "Set B 7",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "7"
+    }
+   },
+   {
+    "id": "uolhfwd",
+    "date": "2026-10-18",
+    "title": "Set B 8",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "8"
+    }
+   },
+   {
+    "id": "jcc3s79",
+    "date": "2026-10-19",
+    "title": "Set B 9",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "9"
+    }
+   },
+   {
+    "id": "j7muxj8",
+    "date": "2026-10-20",
+    "title": "Set B 10",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "10"
+    }
+   },
+   {
+    "id": "ezvbkvg",
+    "date": "2026-10-21",
+    "title": "Set B 11",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "11"
+    }
+   },
+   {
+    "id": "mvlbyim",
+    "date": "2026-10-22",
+    "title": "Set B 12",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "12"
+    }
+   },
+   {
+    "id": "0t2q7iz",
+    "date": "2026-10-23",
+    "title": "Set B 13",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "13"
+    }
+   },
+   {
+    "id": "vgdngsc",
+    "date": "2026-10-24",
+    "title": "Set B 14",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "14"
+    }
+   },
+   {
+    "id": "b5nqzl1",
+    "date": "2026-10-24",
+    "title": "Set B 15",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "15"
+    }
+   },
+   {
+    "id": "466vrta",
+    "date": "2026-10-24",
+    "title": "Set B 16",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "16"
+    }
+   },
+   {
+    "id": "5w6y7x5",
+    "date": "2026-10-25",
+    "title": "Set B 17",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "17"
+    }
+   },
+   {
+    "id": "855anru",
+    "date": "2026-10-25",
+    "title": "Set B 18",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "18"
+    }
+   },
+   {
+    "id": "boipyhy",
+    "date": "2026-10-26",
+    "title": "Set B 19",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "19"
+    }
+   },
+   {
+    "id": "tv2ig9q",
+    "date": "2026-10-27",
+    "title": "Set B 20",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "20"
+    }
+   },
+   {
+    "id": "sr3gt1r",
+    "date": "2026-10-28",
+    "title": "Set B 21",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "21"
+    }
+   },
+   {
+    "id": "x7zaho3",
+    "date": "2026-10-29",
+    "title": "Set B 22",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "22"
+    }
+   },
+   {
+    "id": "99cu1ql",
+    "date": "2026-10-30",
+    "title": "Set B 23",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "23"
+    }
+   },
+   {
+    "id": "vnqg5w9",
+    "date": "2026-10-31",
+    "title": "Set B 24",
+    "kind": "todo",
+    "start": null,
+    "dur": 30,
+    "done": false,
+    "alloc": {
+     "a": "amv98o2qxec",
+     "i": "24"
+    }
+   }
+  ],
+  "layout": {
+   "2026-10-16": {
+    "st|2026-10-16|chem": 1110,
+    "st|2026-10-16|stat": 1195,
+    "st|2026-10-16|eng": 1215,
+    "rb|2026-10-16|pzdvbci": 1320,
+    "rb|2026-10-16|zc8v6th": 1350
+   },
+   "2026-10-17": {
+    "st|2026-10-17|chem": 480,
+    "st|2026-10-17|sat": 490,
+    "rb|2026-10-17|pzdvbci": 1320,
+    "rb|2026-10-17|zc8v6th": 1350
+   },
+   "2026-10-18": {
+    "st|2026-10-18|chem": 480,
+    "rb|2026-10-18|pzdvbci": 1320,
+    "rb|2026-10-18|zc8v6th": 1350
+   },
+   "2026-10-19": {
+    "st|2026-10-19|chem": 1140,
+    "st|2026-10-19|calc": 1220,
+    "st|2026-10-19|mic": 1240,
+    "st|2026-10-19|stat": 1290,
+    "rb|2026-10-19|pzdvbci": 1320,
+    "rb|2026-10-19|zc8v6th": 1350,
+    "st|2026-10-19|self": 1390
+   },
+   "2026-10-20": {
+    "st|2026-10-20|chem": 1140,
+    "st|2026-10-20|stat": 1180,
+    "st|2026-10-20|self": 1210,
+    "rb|2026-10-20|pzdvbci": 1320,
+    "rb|2026-10-20|zc8v6th": 1350,
+    "st|2026-10-20|se": 1390
+   },
+   "2026-10-21": {
+    "st|2026-10-21|mic": 1140,
+    "st|2026-10-21|se": 1170,
+    "st|2026-10-21|eng": 1240,
+    "st|2026-10-21|self": 1290,
+    "rb|2026-10-21|pzdvbci": 1320,
+    "rb|2026-10-21|zc8v6th": 1350
+   },
+   "2026-10-22": {
+    "st|2026-10-22|calc": 1140,
+    "st|2026-10-22|chem": 1170,
+    "st|2026-10-22|mic": 1180,
+    "st|2026-10-22|eng": 1210,
+    "st|2026-10-22|self": 1230,
+    "rb|2026-10-22|pzdvbci": 1320,
+    "rb|2026-10-22|zc8v6th": 1350
+   },
+   "2026-10-23": {
+    "st|2026-10-23|chem": 1140,
+    "st|2026-10-23|stat": 1220,
+    "st|2026-10-23|eng": 1240,
+    "rb|2026-10-23|pzdvbci": 1320,
+    "rb|2026-10-23|zc8v6th": 1350
+   },
+   "2026-10-24": {
+    "st|2026-10-24|chem": 480,
+    "st|2026-10-24|sat": 490,
+    "rb|2026-10-24|pzdvbci": 1320,
+    "rb|2026-10-24|zc8v6th": 1350
+   },
+   "2026-10-25": {
+    "st|2026-10-25|chem": 480,
+    "rb|2026-10-25|pzdvbci": 1320,
+    "rb|2026-10-25|zc8v6th": 1350
+   },
+   "2026-10-26": {
+    "st|2026-10-26|chem": 1140,
+    "st|2026-10-26|calc": 1220,
+    "st|2026-10-26|mic": 1240,
+    "st|2026-10-26|stat": 1290,
+    "rb|2026-10-26|pzdvbci": 1320,
+    "rb|2026-10-26|zc8v6th": 1350,
+    "st|2026-10-26|self": 1390
+   },
+   "2026-10-27": {
+    "st|2026-10-27|chem": 1140,
+    "st|2026-10-27|stat": 1180,
+    "st|2026-10-27|self": 1210,
+    "rb|2026-10-27|pzdvbci": 1320,
+    "rb|2026-10-27|zc8v6th": 1350,
+    "st|2026-10-27|se": 1390
+   },
+   "2026-10-28": {
+    "st|2026-10-28|mic": 1140,
+    "st|2026-10-28|se": 1170,
+    "st|2026-10-28|eng": 1240,
+    "st|2026-10-28|self": 1290,
+    "rb|2026-10-28|pzdvbci": 1320,
+    "rb|2026-10-28|zc8v6th": 1350
+   },
+   "2026-10-29": {
+    "st|2026-10-29|calc": 1140,
+    "st|2026-10-29|chem": 1170,
+    "st|2026-10-29|mic": 1180,
+    "st|2026-10-29|eng": 1210,
+    "st|2026-10-29|self": 1230,
+    "rb|2026-10-29|pzdvbci": 1320,
+    "rb|2026-10-29|zc8v6th": 1350
+   },
+   "2026-10-30": {
+    "st|2026-10-30|chem": 1140,
+    "st|2026-10-30|stat": 1220,
+    "st|2026-10-30|eng": 1240,
+    "rb|2026-10-30|pzdvbci": 1320,
+    "rb|2026-10-30|zc8v6th": 1350
+   },
+   "2026-10-31": {
+    "st|2026-10-31|chem": 480,
+    "st|2026-10-31|sat": 490,
+    "rb|2026-10-31|pzdvbci": 1320,
+    "rb|2026-10-31|zc8v6th": 1350
+   }
+  },
+  "routines": [
+   {
+    "id": "zc8v6th",
+    "title": "Reading & Writing 문제풀이",
+    "sid": "sat",
+    "days": [
+     5,
+     0,
+     2,
+     3,
+     4,
+     6,
+     1
+    ],
+    "min": 40,
+    "amount": "",
+    "from": "2026-10-12",
+    "until": "2026-11-06",
+    "on": true,
+    "starts": {},
+    "durs": {},
+    "start": 1350
+   },
+   {
+    "id": "du22qb9",
+    "title": "모의고사",
+    "sid": "sat",
+    "days": [
+     6
+    ],
+    "min": 180,
+    "amount": "풀이 + 오답 정리",
+    "from": "2026-10-12",
+    "until": "2026-11-06",
+    "on": true,
+    "starts": {},
+    "durs": {}
+   }
+  ],
+  "migr": {
+   "defaultStart": true
+  },
+  "important": [
+   {
+    "id": "imv60nosj1m1",
+    "date": "2026-10-29",
+    "title": "Conrad Competition",
+    "done": false
+   },
+   {
+    "id": "imv60og38x53",
+    "date": "2026-10-26",
+    "title": "세포생물학 SEM 프로토콜 수행평가",
+    "done": false
+   },
+   {
+    "id": "imv60otwus1b",
+    "date": "2026-10-26",
+    "title": "세포생물학 세특 알파폴드: AI 신약개발 혁신",
+    "done": false
+   },
+   {
+    "id": "imv60pfv4mg9",
+    "date": "2026-10-26",
+    "title": "세포생물학 세특 단백질의 일생",
+    "done": false
+   },
+   {
+    "id": "imv6195y5qvt",
+    "date": "2026-12-22",
+    "title": "KSEF 제출 마감",
+    "done": false
+   },
+   {
+    "id": "imv6clanqeun",
+    "date": "2026-10-16",
+    "title": "AP 통계학",
+    "done": true
+   },
+   {
+    "id": "imv6dsab3qze",
+    "date": "2026-10-22",
+    "title": "성격심리학 발표 수행평가",
+    "done": false
+   },
+   {
+    "id": "imv7e3d2xcep",
+    "date": "2026-10-26",
+    "title": "세포생물학 모델 생물체와 그 연구",
+    "done": false
+   },
+   {
+    "id": "imv8r2shpx00",
+    "date": "2026-10-15",
+    "title": "융프 중간보고서 제출",
+    "done": true
+   },
+   {
+    "id": "imv92vla76b5",
+    "date": "2026-10-22",
+    "title": "AP 미시경제 발표",
+    "done": false
+   }
+  ],
+  "allocs": [
+   {
+    "id": "amv98o2qxec",
+    "title": "단어 B",
+    "color": "#db2777",
+    "min": 30,
+    "due": "",
+    "items": [
+     {
+      "id": "1",
+      "label": "Set B 1",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "2",
+      "label": "Set B 2",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "3",
+      "label": "Set B 3",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "4",
+      "label": "Set B 4",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "5",
+      "label": "Set B 5",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "6",
+      "label": "Set B 6",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "7",
+      "label": "Set B 7",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "8",
+      "label": "Set B 8",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "9",
+      "label": "Set B 9",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "10",
+      "label": "Set B 10",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "11",
+      "label": "Set B 11",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "12",
+      "label": "Set B 12",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "13",
+      "label": "Set B 13",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "14",
+      "label": "Set B 14",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "15",
+      "label": "Set B 15",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "16",
+      "label": "Set B 16",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "17",
+      "label": "Set B 17",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "18",
+      "label": "Set B 18",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "19",
+      "label": "Set B 19",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "20",
+      "label": "Set B 20",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "21",
+      "label": "Set B 21",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "22",
+      "label": "Set B 22",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "23",
+      "label": "Set B 23",
+      "min": 30,
+      "done": false
+     },
+     {
+      "id": "24",
+      "label": "Set B 24",
+      "min": 30,
+      "done": false
+     }
+    ]
+   }
+  ]
+ },
+ "publishedAt": "2026-10-16T20:19:29+09:00"
+}

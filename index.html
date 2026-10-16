@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기말 플래너</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 17l5 5 9-12' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script>try { var t = localStorage.getItem('planner-theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) { /* 저장소를 못 쓰면 시스템 설정을 따른다 */ }</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<header id="top"></header>
+<main id="main" class="wrap"><p class="muted">불러오는 중…</p></main>
+<div id="toast" role="status"></div>
+<script src="planner.js"></script>
+<script src="parser.js"></script>
+<script src="core.js"></script>
+<script src="widgets.js"></script>
+<script src="timeline.js"></script>
+<script src="v_today.js"></script>
+<script src="v_calendar.js"></script>
+<script src="v_home.js"></script>
+<script src="v_plan.js"></script>
+<script src="v_routine.js"></script>
+<script src="v_alloc.js"></script>
+<script src="v_notes.js"></script>
+<script src="v_settings.js"></script>
+<script>window.App.boot();</script>
+</body>
+</html>
