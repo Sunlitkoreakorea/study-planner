@@ -536,23 +536,53 @@
   "checks": {},
   "acc": {
    "st|2026-10-12|chem": 0.025883333333333335,
-   "st|2026-10-14|self": 40
+   "st|2026-10-14|self": 40,
+   "cu|f197xmm": 49.55473333333333
   },
   "work": [],
   "log": [],
   "timer": null,
   "manual": {
-   "2026-10-18": {
-    "st|2026-10-18|chem": {
-     "start": 1060,
-     "dur": 30
+   "2026-10-21": {
+    "st|2026-10-21|se": {
+     "skip": true
     },
-    "rb|2026-10-18|zc8v6th": {
+    "st|2026-10-21|eng": {
+     "skip": true
+    },
+    "st|2026-10-21|self": {
+     "start": 1140
+    },
+    "st|2026-10-21|mic": {
+     "skip": true
+    },
+    "rb|2026-10-21|zc8v6th": {
      "start": 1320,
      "dur": 120
+    }
+   },
+   "2026-10-19": {
+    "st|2026-10-19|mic": {
+     "skip": true
     },
-    "st|2026-10-18|stat": {
-     "start": 1120
+    "st|2026-10-19|chem": {
+     "start": 1140,
+     "dur": 60,
+     "skip": true
+    },
+    "st|2026-10-19|calc": {
+     "start": 1140,
+     "dur": 30
+    },
+    "st|2026-10-19|stat": {
+     "start": 1170,
+     "dur": 30
+    },
+    "rb|2026-10-19|zc8v6th": {
+     "start": 1320
+    },
+    "st|2026-10-19|self": {
+     "start": 1200
     }
    }
   },
@@ -653,266 +683,6 @@
     "ref": "imp:imv6dsab3qze"
    },
    {
-    "id": "324v86z",
-    "date": "2026-10-18",
-    "title": "Set B 1",
-    "kind": "todo",
-    "start": 1200,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "1"
-    }
-   },
-   {
-    "id": "22idlm6",
-    "date": "2026-10-18",
-    "title": "Set B 2",
-    "kind": "todo",
-    "start": 1230,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "2"
-    }
-   },
-   {
-    "id": "wakokvi",
-    "date": "2026-10-18",
-    "title": "Set B 3",
-    "kind": "todo",
-    "start": 1140,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "3"
-    }
-   },
-   {
-    "id": "a6m9vth",
-    "date": "2026-10-18",
-    "title": "Set B 4",
-    "kind": "todo",
-    "start": 1170,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "4"
-    }
-   },
-   {
-    "id": "jcc3s79",
-    "date": "2026-10-19",
-    "title": "Set B 9",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "9"
-    }
-   },
-   {
-    "id": "j7muxj8",
-    "date": "2026-10-20",
-    "title": "Set B 10",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "10"
-    }
-   },
-   {
-    "id": "ezvbkvg",
-    "date": "2026-10-21",
-    "title": "Set B 11",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "11"
-    }
-   },
-   {
-    "id": "mvlbyim",
-    "date": "2026-10-22",
-    "title": "Set B 12",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "12"
-    }
-   },
-   {
-    "id": "0t2q7iz",
-    "date": "2026-10-23",
-    "title": "Set B 13",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "13"
-    }
-   },
-   {
-    "id": "vgdngsc",
-    "date": "2026-10-24",
-    "title": "Set B 14",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "14"
-    }
-   },
-   {
-    "id": "b5nqzl1",
-    "date": "2026-10-24",
-    "title": "Set B 15",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "15"
-    }
-   },
-   {
-    "id": "466vrta",
-    "date": "2026-10-24",
-    "title": "Set B 16",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "16"
-    }
-   },
-   {
-    "id": "5w6y7x5",
-    "date": "2026-10-25",
-    "title": "Set B 17",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "17"
-    }
-   },
-   {
-    "id": "855anru",
-    "date": "2026-10-25",
-    "title": "Set B 18",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "18"
-    }
-   },
-   {
-    "id": "boipyhy",
-    "date": "2026-10-26",
-    "title": "Set B 19",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "19"
-    }
-   },
-   {
-    "id": "tv2ig9q",
-    "date": "2026-10-27",
-    "title": "Set B 20",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "20"
-    }
-   },
-   {
-    "id": "sr3gt1r",
-    "date": "2026-10-28",
-    "title": "Set B 21",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "21"
-    }
-   },
-   {
-    "id": "x7zaho3",
-    "date": "2026-10-29",
-    "title": "Set B 22",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "22"
-    }
-   },
-   {
-    "id": "99cu1ql",
-    "date": "2026-10-30",
-    "title": "Set B 23",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "23"
-    }
-   },
-   {
-    "id": "vnqg5w9",
-    "date": "2026-10-31",
-    "title": "Set B 24",
-    "kind": "todo",
-    "start": null,
-    "dur": 30,
-    "done": false,
-    "alloc": {
-     "a": "amv98o2qxec",
-     "i": "24"
-    }
-   },
-   {
     "id": "o8dee9b",
     "date": "2026-10-18",
     "title": "AP 미시경제",
@@ -929,14 +699,19 @@
     "start": 940,
     "dur": 120,
     "done": false
+   },
+   {
+    "id": "18rahob",
+    "date": "2026-10-21",
+    "title": "성격심리학 발표 수행평가",
+    "kind": "todo",
+    "start": 1160,
+    "dur": 60,
+    "done": false,
+    "ref": "imp:imv6dsab3qze"
    }
   ],
   "layout": {
-   "2026-10-18": {
-    "st|2026-10-18|chem": 480,
-    "rb|2026-10-18|pzdvbci": 1320,
-    "rb|2026-10-18|zc8v6th": 1350
-   },
    "2026-10-19": {
     "st|2026-10-19|chem": 1140,
     "st|2026-10-19|calc": 1220,
@@ -1297,5 +1072,5 @@
    }
   ]
  },
- "publishedAt": "2026-10-18T16:05:56+09:00"
+ "publishedAt": "2026-10-19T08:27:01+09:00"
 }
