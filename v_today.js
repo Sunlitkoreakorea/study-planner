@@ -133,7 +133,7 @@
         const skipBtn = p.item ? `<button class="btn sm ghost" data-action="skip" data-key="${esc(p.item.key)}" title="다시 띄우지 않아요">${p.k === 'routine' ? '오늘은 건너뛰기' : `이 ${PLBL[p.k]}은 안 할래요`}</button>` : '';
         return `<div class="part"><div class="part-h"><b>${esc(lbl(p))}</b> <small>${p.min}분</small>${skipBtn}</div><div class="sub">${esc(subOf(S, pe, today))}</div>${bodyOf(S, pe)}</div>`;
       }).join('');
-      more = `<div class="ri-b">${sections}${e.extra ? `<div class="hint">자유 공부 ${e.extra}분이 더 잡혀 있어요 (직접 늘린 시간)</div>` : ''}${timeEdit(S, e, date)}${live ? chooser(S, e) : ''}
+      more = `<div class="ri-b">${sections}${e.extra ? `<div class="hint">자유 공부 ${e.extra}분이 더 잡혀 있어요 (직접 늘린 시간)</div>` : ''}${e.shrunk ? `<div class="hint">복습·예습 계획은 ${e.baseMin}분인데 ${e.min}분으로 줄여 잡았어요 (시험 대비 몫은 먼저 빠지고, 나머지가 비례해서 줄었어요). 되돌리려면 ‘자동 배치로’를 누르세요.</div>` : ''}${timeEdit(S, e, date)}${live ? chooser(S, e) : ''}
         <div class="acts"><button class="btn ghost" data-action="delentry" data-date="${date}" data-id="${esc(e.id)}">${live ? '오늘' : '이 날'} 계획에서 빼기</button></div></div>`;
     }
     return `<div class="ri ${open ? 'open' : ''} ${A.ui.sel === e.id ? 'sel' : ''} ${running ? 'run' : ''}" data-row="${esc(e.id)}" style="--c:${color}">

@@ -655,6 +655,19 @@
   // 한 과목의 복습·예습·시험 대비는 하루에 블록 하나(과목 블록)로 합친다. 대회·과제와 내 일정은 따로.
   // 순서: ① 내 일정 ② 직접 옮긴 블록 ③ 이전에 놓였던 자리를 그대로 지키는 블록(layout) ④ 나머지는 가장 이른 빈 구간에 자동 배치.
   // ③ 덕분에 한 블록을 옮겨도 다른 블록이 따라 움직이지 않는다. 자리가 겹치는 블록만 자동 배치로 돌아간다.
+  // 블록 길이를 target 분으로 줄일 때 각 부분(복습·예습·시험 대비)의 분을 비례해서(5분 단위) 줄인다
+  function shrinkParts(parts, target) {
+    const tot = parts.reduce((a, p) => a + p.min, 0);
+    if (!(tot > target) || tot <= 0) return;
+    let left = target;
+    if (target < 5 * parts.length) { for (const p of parts) { const m = Math.min(p.min, left); p.min = m; left -= m; } return; }     // 너무 짧으면 앞부분부터 채운다
+    parts.forEach((p, i) => {
+      const rest = parts.length - 1 - i;
+      const m = rest === 0 ? left : Math.max(5, Math.min(P.round5(p.min * target / tot), left - 5 * rest));    // 뒤 부분에 최소 5분씩은 남긴다
+      p.min = m; left -= m;
+    });
+  }
+
   P.place = function (S, D) {
     const st = S.settings, man = P.manualOf(S, D.date), layout = (S.layout && S.layout[D.date]) || null, entries = [];
     const groups = {};
@@ -668,9 +681,9 @@
     };
     for (const it of D.mandatory) {
       if ((it.kind === 'routine' || it.kind === 'review') && it.fixedStart != null) {
-        const rid = it.kind === 'routine' ? 'rb' + it.key.slice(2) : 'rr' + it.key.slice(3), ov = man[rid], dur = Math.max(it.est, (ov && ov.dur) || 0);
+        const rid = it.kind === 'routine' ? 'rb' + it.key.slice(2) : 'rr' + it.key.slice(3), ov = man[rid], dur = ov && ov.dur ? ov.dur : it.est;
         const sbj = P.subj(S, it.sid);
-        entries.push({ id: rid, kind: 'study', sid: it.sid, min: dur, baseMin: it.est, extra: dur - it.est, hard: it.kind === 'review' && !!(sbj && sbj.hard), order: 0, parts: [{ k: it.kind, min: it.est, item: it }], spentExam: 0, fixedRoutine: true, fixedStart: it.fixedStart });
+        entries.push({ id: rid, kind: 'study', sid: it.sid, min: dur, baseMin: it.est, extra: Math.max(0, dur - it.est), shrunk: Math.max(0, it.est - dur), hard: it.kind === 'review' && !!(sbj && sbj.hard), order: 0, parts: [{ k: it.kind, min: Math.min(it.est, dur), item: it }], spentExam: 0, fixedRoutine: true, fixedStart: it.fixedStart });
         continue;
       }
       const g = grp(it.sid); g.parts.push({ k: it.kind, min: it.est, item: it }); g.min += it.est;
@@ -686,8 +699,12 @@
       g.parts.sort((a, b) => PO[a.k] - PO[b.k]);
       g.baseMin = g.min;
       const ov = man[g.id];
-      if (ov && ov.dur) g.min = Math.max(g.min, ov.dur);
-      g.extra = g.min - g.baseMin;
+      if (ov && ov.dur) {
+        g.min = ov.dur;                                              // 직접 정한 길이 (계획보다 줄이는 것도 된다)
+        if (g.min < g.baseMin) shrinkParts(g.parts, g.min);          // 줄이면 복습·예습·시험 대비가 비례해서 줄어든다
+      }
+      g.extra = Math.max(0, g.min - g.baseMin);
+      g.shrunk = Math.max(0, g.baseMin - g.min);
       g.spentExam = g.parts.reduce((a, p) => a + (p.w ? p.w.sp : 0), 0);
     }
     for (const c of S.custom || []) {
